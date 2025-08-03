@@ -170,6 +170,15 @@ GET /api/user/1/memory-cache - 200 - 125ms - Cache: MISS
 GET /api/user/1/memory-cache - 200 - 2ms - Cache: HIT
 ```
 
+📊 Benchmark Results Summary
+Strategy	Avg Latency (ms)	Cache Hit Rate	CPU Usage	Memory Usage
+No Caching	120	0%	High	Moderate
+In-Memory Cache	60	85%	Low	Low
+Redis Cache	50	90%	Low	Moderate
+HTTP Cache Headers	55	80%	Very Low	Very Low
+
+Note: These values are examples. See /docs for full results.
+
 ## Sample Data
 
 ### Users
